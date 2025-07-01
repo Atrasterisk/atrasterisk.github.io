@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Kontak</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Form Kontak</h1>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h2>Hubungi Saya</h2>
+      
+      <form action="https://formspree.io/f/xanjvajg" method="POST" class="needs-validation" novalidate>
+        <input type="text" name="_gotcha" style="display:none">
+
+        <div class="form-group">
+          <label for="nama">Nama Lengkap / Instansi*</label>
+          <input type="text" class="form-control" id="nama" name="nama" required placeholder="Masukkan nama lengkap / instansi">
+          <div class="invalid-feedback">Harap isi nama lengkap / instansi Anda</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Alamat Email</label>
+          <input type="email" class="form-control" id="email" name="email" required placeholder="contoh@email.com">
+          <div class="invalid-feedback">Harap isi email yang valid</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="telepon">Nomor WhatsApp (Opsional)</label>
+          <input type="tel" class="form-control" id="telepon" name="telepon" pattern="[0-9]*" inputmode="numeric" placeholder="628123456789">
+          <small class="text-muted">Awali dengan kode negara tanpa '+' atau '0'</small>
+        </div>
+        
+        <div class="form-group">
+          <label for="subjek">Subjek Pesan </label>
+          <input type="text" class="form-control" id="subjek" name="subjek" required placeholder="Masukkan subjek pesan">
+          <div class="invalid-feedback">Harap isi subjek pesan Anda</div>
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Isi Pesan</label>
+          <textarea class="form-control" id="pesan" name="pesan" rows="5" required placeholder="Tulis pesan Anda secara detail di sini..."></textarea>
+          <div class="invalid-feedback">Harap isi pesan Anda</div>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane mr-2"></i> Kirim Pesan
+        </button>
+      </form>
+    </section>
+
+    <section class="contact-direct">
+      <h2>Atau kontak langsung ke</h2>
+      <div class="social-links">
+        <a href="https://wa.me/+6281352454181" class="social-link whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/far87___" class="social-link instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com/atrasterisk" class="social-link twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:m.farhan.hafiz.a@gmail.com" class="social-link email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Muhammad Farhan Hafiz Alkirami.</p>
+  </footer>
+
+</body>
+</html>
