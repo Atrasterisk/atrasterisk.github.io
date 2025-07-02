@@ -50,12 +50,9 @@ body {
 
 .form-group textarea {
   resize: vertical;
-  max-width: 100%;
 }
 
 .submit-btn {
-  display: flex;
-  justify-content: center;
   background-color: #4caf50;
   color: #ffffff;
   padding: 10px;
@@ -96,6 +93,7 @@ body {
 .form-control.is-invalid {
   border-color: #dc3545;
 }
+
 .contact-direct {
   max-width: 800px;
   margin: 30px auto;

@@ -14,10 +14,14 @@
   </header>
 
   <main>
+  <!--
+    Form Kontak
+    Data dikirim ke https://formspree.io/f/xanjvajg
+  -->
     <section class="contact-form">
       <h2>Hubungi Saya</h2>
       
-      <form action="https://formspree.io/f/xanjvajg" method="POST" class="needs-validation" novalidate>
+      <form action="https://formspree.io/f/xanjvajg?success=#confirmation" method="POST" class="needs-validation">
         <input type="text" name="_gotcha" style="display:none">
 
         <div class="form-group">
@@ -51,13 +55,17 @@
         </div>
         
         <button type="submit" class="submit-btn">
-          <i class="fas fa-paper-plane mr-2"></i> Kirim Pesan
+          <i class="fas fa-paper-plane mr-2"></i>Kirim Pesan
         </button>
       </form>
     </section>
 
+    <!--
+      Kontak Langsung
+      Link anchor mengarah langsung ke direct message atau yang mendekati
+    -->
     <section class="contact-direct">
-      <h2>Atau kontak langsung ke</h2>
+      <h2>Atau Kontak Langsung Ke</h2>
       <div class="social-links">
         <a href="https://wa.me/+6281352454181" class="social-link whatsapp">
           <i class="fab fa-whatsapp"></i>
